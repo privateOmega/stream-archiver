@@ -15,7 +15,8 @@
     "prettier:check": "prettier --check '**/*.{js}'",
     "example": "babel-node examples/example.js",
     "build": "microbundle --target node",
-    "dev": "microbundle watch --target node"
+    "dev": "microbundle watch --target node",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
