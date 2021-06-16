@@ -46,7 +46,8 @@
   "dependencies": {
     "@supercharge/promise-pool": "^1.7.0",
     "axios": "^0.21.1",
-    "core-js": "^3.11.0"
+    "core-js": "^3.11.0",
+    "lodash.merge": "^4.6.2"
   },
   "peerDependencies": {
     "archiver": "*"
