@@ -2,13 +2,20 @@
   "name": "stream-archiver",
   "version": "1.0.0",
   "description": "Generate an archive stream from any number of files on the web with concurrency",
-  "main": "src/index.js",
+  "type": "module",
+  "source": "src/index.js",
+  "exports": "./dist/stream-archiver.modern.js",
+  "main": "./dist/stream-archiver.cjs",
+  "module": "./dist/stream-archiver.module.js",
+  "unpkg": "./dist/stream-archiver.umd.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prettier:check": "prettier --check '**/*.{js}'",
-    "example": "babel-node examples/example.js"
+    "example": "babel-node examples/example.js",
+    "build": "microbundle --target node",
+    "dev": "microbundle watch --target node"
   },
   "repository": {
     "type": "git",
