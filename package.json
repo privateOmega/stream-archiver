@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "prettier:check": "prettier --check '**/*.{js}'"
+    "prettier:check": "prettier --check '**/*.{js}'",
+    "example": "babel-node examples/example.js"
   },
   "repository": {
     "type": "git",
