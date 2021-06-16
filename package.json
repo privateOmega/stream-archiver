@@ -1,0 +1,49 @@
+{
+  "name": "stream-archiver",
+  "version": "1.0.0",
+  "description": "Generate an archive stream from any number of files on the web with concurrency",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prettier:check": "prettier --check '**/*.{js}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/privateOmega/stream-archiver.git"
+  },
+  "author": "privateOmega <privateOmega@protonmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/privateOmega/stream-archiver/issues"
+  },
+  "homepage": "https://github.com/privateOmega/stream-archiver#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "core-js": "^3.11.0"
+  }
+}
