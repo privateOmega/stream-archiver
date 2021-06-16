@@ -27,7 +27,14 @@ class StreamArchiver {
     );
     this.concurrency = concurrency;
     this.defaultStream = new PassThrough();
-    this.streams = streams.length ? streams : [this.defaultStream];
+    this.streams = streams.length
+      ? streams
+      : [
+          {
+            stream: this.defaultStream,
+            selfDestroy: false,
+          },
+        ];
     this.files = files;
     this.debug = debug;
   }
