@@ -46,5 +46,8 @@
   "dependencies": {
     "@supercharge/promise-pool": "^1.7.0",
     "core-js": "^3.11.0"
+  },
+  "peerDependencies": {
+    "archiver": "*"
   }
 }
