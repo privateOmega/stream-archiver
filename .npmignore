@@ -1,0 +1,7 @@
+examples/
+src/
+.editorconfig
+.eslintrc.json
+.prettierrc
+babel.config.json
+commitlint.config.js
