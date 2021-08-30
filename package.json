@@ -1,6 +1,6 @@
 {
   "name": "stream-archiver",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate an archive stream from any number of files on the web with concurrency",
   "source": "src/index.js",
   "exports": "./dist/stream-archiver.modern.js",
