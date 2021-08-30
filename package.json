@@ -2,7 +2,6 @@
   "name": "stream-archiver",
   "version": "1.0.1",
   "description": "Generate an archive stream from any number of files on the web with concurrency",
-  "type": "module",
   "source": "src/index.js",
   "exports": "./dist/stream-archiver.modern.js",
   "main": "./dist/stream-archiver.cjs",
