@@ -3,10 +3,8 @@
   "version": "1.0.2",
   "description": "Generate an archive stream from any number of files on the web with concurrency",
   "source": "src/index.js",
-  "exports": "./dist/stream-archiver.modern.js",
-  "main": "./dist/stream-archiver.cjs",
-  "module": "./dist/stream-archiver.module.js",
-  "unpkg": "./dist/stream-archiver.umd.js",
+  "main": "./dist/stream-archiver.umd.js",
+  "module": "./dist/stream-archiver.esm.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
